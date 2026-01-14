@@ -61,6 +61,8 @@ class Motoca:
             return True
         
     def buzinar(self):
+        if self.pessoa is None:
+            return ""
         resultado = "P"
         try:
             pot = int(self.potencia)
